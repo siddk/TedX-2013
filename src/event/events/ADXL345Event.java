@@ -2,10 +2,6 @@ package event.events;
 
 import sensor.GRTADXL345;
 
-/**
- *
- * @author calvin
- */
 public class ADXL345Event extends SensorEvent {
 
     public static final int KEY_X = 0;

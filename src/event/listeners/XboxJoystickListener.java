@@ -2,10 +2,6 @@ package event.listeners;
 
 import event.events.XboxJoystickEvent;
 
-/**
- *
- * @author student
- */
 public interface XboxJoystickListener {
     
     public void leftXAxisMoved(XboxJoystickEvent e);

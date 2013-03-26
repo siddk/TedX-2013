@@ -2,10 +2,6 @@ package event.listeners;
 
 import event.events.JoystickEvent;
 
-/**
- *
- * @author dan
- */
 public interface GRTJoystickListener {
 
     public void XAxisMoved(JoystickEvent e);

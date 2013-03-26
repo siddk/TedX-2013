@@ -4,8 +4,6 @@ import core.Sensor;
 
 /**
  * Generic sensor event.
- * 
- * @author anand, ajc
  */
 public class SensorEvent {
 

@@ -3,8 +3,6 @@ package event.events;
 import core.Sensor;
 
 /**
- *
- * @author ajc
  */
 public class ButtonEvent extends SensorEvent {
 

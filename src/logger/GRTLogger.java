@@ -10,8 +10,6 @@ import javax.microedition.io.Connector;
 
 /**
  * Static class that is responsible for all system logging.
- *
- * @author agd
  */
 public final class GRTLogger {
 

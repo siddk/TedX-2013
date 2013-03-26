@@ -3,10 +3,6 @@ package event.events;
 import core.Sensor;
 import sensor.GRTSwitch;
 
-/**
- *
- * @author gerberduffy
- */
 public class SwitchEvent extends SensorEvent {
 
     public SwitchEvent(GRTSwitch sw, double newState) {

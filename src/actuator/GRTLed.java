@@ -4,8 +4,6 @@ import edu.wpi.first.wpilibj.PWM;
 
 /**
  * Abstraction of a standard LED.
- *
- * @author gerberduffy
  */
 public class GRTLed {
 

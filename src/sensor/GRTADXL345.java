@@ -10,8 +10,6 @@ import java.util.Vector;
 /**
  * Wrapper for the ADXL345 accelerometer. Measures X, Y, and Z accelerations in
  * G's (doesn't account for gravity)
- *
- * @author gerberduffy
  */
 public class GRTADXL345 extends Sensor {
 

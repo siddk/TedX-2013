@@ -8,10 +8,6 @@ import event.listeners.ButtonListener;
 import event.listeners.XboxJoystickListener;
 import java.util.Vector;
 
-/**
- *
- * @author ajc
- */
 public class GRTXboxJoystick extends Sensor {
 
     /**

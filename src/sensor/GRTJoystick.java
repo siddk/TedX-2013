@@ -11,8 +11,6 @@ import java.util.Vector;
 
 /**
  * Wrapper class for a Logitech Attack 3 Joystick.
- *
- * @author dan
  */
 public class GRTJoystick extends Sensor {
 

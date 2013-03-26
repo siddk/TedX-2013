@@ -11,8 +11,6 @@ import java.util.Vector;
  * Wrapper class for a switch. By default, switches are assumed to pull the
  * input low when pressed. If instead the input is low by default and pressing
  * the switch pulls the input high, set reversed to true.
- *
- * @author gerberduffy
  */
 public class GRTSwitch extends Sensor {
 

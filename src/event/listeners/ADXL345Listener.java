@@ -2,10 +2,6 @@ package event.listeners;
 
 import event.events.ADXL345Event;
 
-/**
- *
- * @author calvin
- */
 public interface ADXL345Listener {
 
     public void XAccelChange(ADXL345Event e);

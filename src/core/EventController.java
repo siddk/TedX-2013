@@ -2,8 +2,6 @@ package core;
 
 /**
  * An EventController describes behavior based on received events.
- *
- * @author ajc
  */
 public abstract class EventController extends GRTLoggedProcess {
     

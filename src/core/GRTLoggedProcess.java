@@ -7,8 +7,6 @@ import logger.GRTLogger;
  * When a GRTLoggedProcess is constructed, it is not run.
  *
  * Logging is done to the static GRTLogger.
- *
- * @author ajc
  */
 public abstract class GRTLoggedProcess {
 

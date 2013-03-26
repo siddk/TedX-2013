@@ -12,8 +12,6 @@ import edu.wpi.first.wpilibj.tables.ITableListener;
 /**
  * Wrapper class for solenoids. Done to allow for interchangeablity between
  * solenoids on the solenoid module, and solenoids on spikes.
- * 
- * @author Calvin
  */
 public class GRTSolenoid {
     

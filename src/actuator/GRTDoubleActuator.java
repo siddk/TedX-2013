@@ -8,8 +8,6 @@ import edu.wpi.first.wpilibj.Relay;
  * 
  * Actuator 1 is connected to the M+ pin on the spike (and ground),
  * Actuator 2 is connected to the M- pin.
- * 
- * @author Calvin Huang <smartycalvin@gmail.com>
  */
 public class GRTDoubleActuator {
     

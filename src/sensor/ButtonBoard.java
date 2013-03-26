@@ -5,16 +5,12 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.DriverStationEnhancedIO;
 import edu.wpi.first.wpilibj.DriverStationEnhancedIO.EnhancedIOException;
 import event.events.ButtonEvent;
-import event.events.PotentiometerEvent;
 import event.listeners.ButtonListener;
-import event.listeners.PotentiometerListener;
 import java.util.Enumeration;
 import java.util.Vector;
 
 /**
  * Button board on the 2013 driver station.
- * 
- * @author Calvin
  */
 public class ButtonBoard extends Sensor {
     
@@ -61,21 +57,24 @@ public class ButtonBoard extends Sensor {
     }
 
     protected void notifyListeners(int id, double newDatum) {
-        if (id < 6)
+        if (id < 6) {
             logInfo("ButtonBoard id: " + id + " datum " + newDatum);
+        }
         
         if (id < 6) { //button event
             ButtonEvent e = new ButtonEvent(this, id, newDatum == TRUE);
-            if (newDatum == TRUE)
-                for (Enumeration en = buttonListeners.elements(); en.hasMoreElements();)
+            if (newDatum == TRUE) {
+                for (Enumeration en = buttonListeners.elements(); en.hasMoreElements();) {
                     ((ButtonListener) en.nextElement()).buttonPressed(e);
-            else
-                for (Enumeration en = buttonListeners.elements(); en.hasMoreElements();)
-                    ((ButtonListener) en.nextElement()).buttonReleased(e);
-        } else { //potentiometer event
-            PotentiometerEvent e = new PotentiometerEvent(this, id, newDatum);
-            for (Enumeration en = potentiometerListeners.elements(); en.hasMoreElements();)
-                ((PotentiometerListener) en.nextElement()).valueChanged(e);
+                }
+            }
+            else {
+                for (Enumeration en = buttonListeners.elements(); en.hasMoreElements();) {
+                ((ButtonListener) en.nextElement()).buttonReleased(e);
+            }
+            }
+        } 
+        else { 
         }
     }
     
@@ -163,15 +162,5 @@ public class ButtonBoard extends Sensor {
      * Adds a potentiometer listener
      * @param l listener to add
      */
-    public void addPotentiometerListener(PotentiometerListener l) {
-        potentiometerListeners.addElement(l);
-    }
-    
-    /**
-     * Removes a potentiometer listener
-     * @param l listener to add
-     */
-    public void removePotentiometerListener(PotentiometerListener l) {
-        potentiometerListeners.removeElement(l);
-    }
+
 }

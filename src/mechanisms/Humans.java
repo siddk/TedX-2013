@@ -15,17 +15,20 @@ import core.TedXMech;
  * @author sidd
  */
 public class Humans extends TedXMech {
-    private GRTSolenoid Humans = solenoids[0];
+    private GRTSolenoid Human1 = solenoids[0];
+    private GRTSolenoid Human2 = solenoids[1];
+    private GRTSolenoid Human3 = solenoids[2];
+    
     public Humans(GRTSolenoid solenoid) {
         super("Humans", solenoid);
         
     }
     protected void extend() {
-       Humans.set(true);
+       
     }
 
     protected void retract() {
-       Humans.set(false);
+       
     }
     
 }
